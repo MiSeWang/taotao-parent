@@ -17,7 +17,7 @@ public class SolrjTest {
         // solr5创建方式,在url中指定core名称：core
         //  HttpSolrClient solrServer = new HttpSolrClient("http://127.0.0.1:8080/solr/core");
         // solr7创建方式,在url中指定core名称：core
-        HttpSolrClient solrServer = new HttpSolrClient.Builder("http://localhost:8983/solr/taotao_core").build();
+        HttpSolrClient solrServer= new HttpSolrClient.Builder("http://localhost:8983/solr/taotao_core").build();
         //创建一个文档索引
         SolrInputDocument document = new SolrInputDocument();
         document.addField("id", "test");
